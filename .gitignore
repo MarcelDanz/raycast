@@ -19,6 +19,10 @@ Icon
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 
+# Aider
+aider*
+.aider*
+
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
@@ -29,6 +33,7 @@ Temporary Items
 ## Build generated
 build/
 DerivedData/
+raycast-env.d.ts
 
 ### Node ###
 # Logs
