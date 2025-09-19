@@ -2,6 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "bluetooth-manager",
   "title": "Bluetooth Manager",
+  "owner": "hoctao",
   "description": "Connect and disconnect bluetooth devices.",
   "icon": "bluetooth.png",
   "author": "MarcelDanz",
