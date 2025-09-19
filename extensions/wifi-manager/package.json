@@ -1,0 +1,56 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "wifi-manager",
+  "title": "Wifi Manager",
+  "owner": "hoctao",
+  "description": "Manage WiFi connections from your keyboard.",
+  "icon": "wifi.png",
+  "author": "MarcelDanz",
+  "categories": [
+    "System",
+    "Productivity"
+  ],
+  "license": "MIT",
+  "screenshots": [
+    {
+      "path": "metadata/screenshot-1.png",
+      "caption": "List and manage all available wifi connections."
+    }
+  ],
+  "commands": [
+    {
+      "name": "manage-wifi",
+      "title": "Manage Wifi Connections",
+      "description": "List, connect to, and manage WiFi networks.",
+      "mode": "view",
+      "icon": "wifi.png"
+    },
+    {
+      "name": "toggle-wifi",
+      "title": "Toggle Wifi",
+      "description": "Turn WiFi on or off.",
+      "mode": "no-view",
+      "icon": "wifi.png"
+    }
+  ],
+  "preferences": [],
+  "dependencies": {
+    "@raycast/api": "^1.103.1",
+    "@raycast/utils": "^1.4.8"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.8",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "eslint": "^8.57.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
