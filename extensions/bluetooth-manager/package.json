@@ -1,0 +1,55 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "bluetooth-manager",
+  "title": "Bluetooth Manager",
+  "description": "Connect and disconnect bluetooth devices.",
+  "icon": "bluetooth.png",
+  "author": "MarcelDanz",
+  "categories": [
+    "System"
+  ],
+  "license": "MIT",
+  "screenshots": [
+    {
+      "path": "metadata/screenshot-1.png",
+      "caption": "List all Bluetooth devices"
+    },
+    {
+      "path": "metadata/screenshot-2.png",
+      "caption": "Search through your devices"
+    }
+  ],
+  "commands": [
+    {
+      "name": "index",
+      "title": "Manage Bluetooth Devices",
+      "description": "Connect and disconnect bluetooth devices",
+      "mode": "view"
+    },
+    {
+      "name": "pair-device",
+      "title": "Pair New Bluetooth Device",
+      "description": "Scans for and pairs with new Bluetooth devices",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.103.1",
+    "@raycast/utils": "^1.4.8"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.8",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "eslint": "^8.57.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
